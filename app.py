@@ -7,7 +7,7 @@ print('hello world')
 OPTIONS = ['rock', 'paper', 'scissors']
 
 def get_user_choice():
-    user_choice = input('Please choose rock, paper, or scissors: ')
+    user_choice = input('Please choose rock, paper, or scissors: ').lower()
     while user_choice not in OPTIONS:
         print('Invalid choice. Please choose rock, paper, or scissors.')
         user_choice = input('Please choose rock, paper, or scissors: ')
